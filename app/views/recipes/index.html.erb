@@ -1,0 +1,18 @@
+<%= link_to 'home', root_path %>
+<div class= 'list'>
+ <% @recipes.each do |r| %>
+    <%=r.title%>
+<%if r.description.present? %>
+    <%=r.description%>
+<%else%>
+"No recipe"
+<%end%>
+
+<%= link_to 'show', recipe_path(r.id) %>
+<%= link_to 'edit', edit_recipe_path(r.id) %>
+</br>
+<%end%>   
+</div>
+
+<%= link_to 'stworz nowy', new_recipe_path %>
+

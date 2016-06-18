@@ -1,0 +1,11 @@
+thead {color:blue;}
+tbody {color:red;}
+tfoot {color:green;}
+
+.list {
+ color: green;
+    
+}
+table, th, td {
+    border:1px solid black;
+}

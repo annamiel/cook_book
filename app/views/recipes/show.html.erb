@@ -1,0 +1,8 @@
+<%= @recipe.title %>
+<%= @recipe.description %>
+<%=link_to 'back', recipes_path %>
+<h1>Skladniki</h1>
+<% @recipe.ingridients.each do |i| %>
+<%=i.name%>
+<%=i.price%>
+<%end%>
